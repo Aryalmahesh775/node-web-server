@@ -15,6 +15,8 @@ app.use((req,res,next)=>{
     fs.appendFile('server.log',log + '\n',(err) =>{
       if (err) {
         console.log('Unable to append to sever.log')
+        console.log('Unable to append to sever.log by james')
+
       }
     });
     next();
